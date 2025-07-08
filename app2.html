@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            margin: 0;
+        }
+
+        header {
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+            height: 150px;
+        }
+
+        .text {
+            color: floralwhite;
+            text-transform: uppercase;
+            text-align: right;
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 5px solid #0047AB;
+            object-fit: cover;
+            padding: 10px;
+        }
+        .list{
+            background-color: #28252522;
+        }
+        .list ul {
+            list-style: none;
+            margin: 0;
+            padding-left: 5px;
+            display: flex;
+            justify-content: left;
+            gap: 40px;
+        }
+        .list li {
+            padding: 15px 0;
+        }
+
+        .list a {
+            text-decoration: none;
+            color: rgb(12, 10, 10);
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .list:hover{
+            text-decoration: underline;
+        }
+        main{
+            margin-left: 10px;
+        }
+        .inputs{
+            margin-left: 10px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .gap{
+            margin-right: 10px;
+            padding: 10px;
+        }
+        .display{
+            margin-top: 20px;
+            padding: 10px;
+        }
+        footer{
+        text-align: center;
+        background-color: rgb(2, 0, 14);
+        color: white;    
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="mru.jpg" alt="logo" class="logo">
+        <h1 class="text">PRODUCTO</h1>
+    </header>
+    <section class="list">
+        <div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#About">About</a></li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <h1>Product Form</h1>
+        <div class="inputs">
+            <input type="text" name="productid" id="productid" placeholder="Product ID" class="gap">
+            <input type="text" name="productname" id="productname" placeholder="Product Name" class="gap">
+            <input type="number" name="price" id="price" placeholder="price" class="gap">
+            <input type="number" name="qty" id="qty" placeholder="Quantity" class="gap">
+            <button class="gap">Add Product</button><br>
+            <button class="display">Display Products</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Developed by Vamsi Reserved&trade;</p>
+    </footer>
+</body>
+</html>
